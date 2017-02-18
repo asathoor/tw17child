@@ -3,4 +3,4 @@
 Base for a Child Theme.
 
 * @package: WordPress
-* @subpackage: tw17child
+* @sub-package: tw17child
