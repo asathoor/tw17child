@@ -13,6 +13,7 @@ get_header(); ?>
 
 			<!-- ok, adding a title like that is sooo bad practise, but anyway ... -->
 			<h2> <?php _e("Content in the Twenty Seventeen Category"); ?> </h2>
+			<h5> <?php _e("Articles	 this category ( via PHP )"); ?> </h5>
 
 			<!-- the loop -->
 			 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
@@ -70,7 +71,7 @@ get_header(); ?>
 
 		<aside>
 			<hr>
-			<h2> <?php _e("Other Categories ( via REST API )"); ?> </h2>
+			<h5> <?php _e("Other Categories ( via REST API )"); ?> </h5>
 			
 			<p> <?php _e("Costum made category page. Getting content via REST API, not the loop."); ?> </p>
 
@@ -91,7 +92,7 @@ get_header(); ?>
 ( function( $ ) {
 
 	// code goes here
-	console.log('Jquery running. Q.E.D.');
+	console.log('Jquery: all systems up and running. Alert level: green.');
 
 	// get content via REST API ( from multimusen.dk ! )
 	// @url: https://github.com/asathoor/wpRESTandJson/blob/master/rest.html
@@ -116,11 +117,14 @@ get_header(); ?>
 					//console.log( response[0].title.rendered ); // ok
 					//console.log( response.length );
 
+				$('#REST').append( '<ul>' ); // ul element
+
 				for( var i = 0; i < response.length; i++){
 					//console.log( response[i].title.rendered );
-					$('#REST').append( '<h3>' + response[i].name 
-						+ '</h3><div class="categoryDescription">' + response[i].description + '</div>');
+					$('#REST').append( '<li> <a href="' + response[i].link + '"> ' + response[i].name + ' </a> </li>' ); // li elements
 				}
+
+				$('#REST').append( '</ul>' ); // /ul
 		  }
 	});
 	// code end
