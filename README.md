@@ -13,6 +13,6 @@ The changes are:
 | File                           | Changes                          |
 |--------------------------------|----------------------------------|
 | header.php                     | Jquery support added.            |
-| category-twenty-seventeen.php  | Ajax script, and traditional PHP |
+| category-twenty-seventeen.php  | REST API via AJAX |
 | functions.php                  | Tweaks: SEO, Tiny MCE, remove `head` crap |
 | page-jquery-test.php           | How to add Jquery code to a page |
