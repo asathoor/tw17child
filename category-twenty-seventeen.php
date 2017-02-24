@@ -129,7 +129,12 @@ get_header(); ?>
 				for( var i = 0; i < response.length; i++){
 
 					//console.log( response[i].title.rendered );
-					$('#REST').append( '<li> <a href="' + response[i].link + '"> ' + response[i].name + ' </a> </li>' ); // li elements
+					$('#REST').append( '<li> <a href="' 
+						+ response[i].link 
+						+ '"> ' 
+						+ response[i].name 
+						+ ' </a> </li>' 
+					); // li elements
 
 				}
 
