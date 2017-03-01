@@ -4,6 +4,7 @@
  * Purpose: trying out the REST API
  * @package: WordPress
  * @sub-package: tw17child
+ *
  */
 get_header(); ?>
 
@@ -94,34 +95,47 @@ get_header(); ?>
 	// code goes here
 	console.log('Jquery: all systems up and running. Alert level: green.');
 
-	// get content via REST API ( from multimusen.dk ! )
-	// @url: https://github.com/asathoor/wpRESTandJson/blob/master/rest.html
+	/**
+	 * REST API
+	 * get content via REST API ( from multimusen.dk )
+	 * @url: https://github.com/asathoor/wpRESTandJson/blob/master/rest.html
+	 *
+	 * Note:
+	 * This url should work: "<?php echo get_site_url(); ?>/wp-json/wp/v2/categories"
+	 * If not, try to hardcode the url: http://YOURWEBSITE.EDU/wp-json/wp/v2/categories
+	 */
 	$.ajax({
-		  url: "http://research-wordpress.dk/wp-json/wp/v2/categories",
+		  url: "<?php echo get_site_url(); ?>/wp-json/wp/v2/categories",
 	 
-		  // The name of the callback parameter, as specified by the YQL service
+		  // The name of the callback parameter
 		  jsonp: "callback",
 	 
 		  // Tell jQuery we're expecting JSON
 		  dataType: "json",
 	 
-		  // Tell YQL what we want and that we want JSON
+		  // Tell that we want JSON
 		  data: {
-		      //q: "select title,abstract,url from search.news where query=\"cat\"",
+		      
 		      format: "json"
 		  },
 	 
-		  // Work with the response
 		  success: function( response ) {
 		      console.log( response ); // server response
 					//console.log( response[0].title.rendered ); // ok
 					//console.log( response.length );
 
-				$('#REST').append( '<ul>' ); // ul element
+				$('#REST').append( '<ul>' ); // append markup to the #REST id
 
 				for( var i = 0; i < response.length; i++){
+
 					//console.log( response[i].title.rendered );
-					$('#REST').append( '<li> <a href="' + response[i].link + '"> ' + response[i].name + ' </a> </li>' ); // li elements
+					$('#REST').append( '<li> <a href="' 
+						+ response[i].link 
+						+ '"> ' 
+						+ response[i].name 
+						+ ' </a> </li>' 
+					); // li elements
+
 				}
 
 				$('#REST').append( '</ul>' ); // /ul
