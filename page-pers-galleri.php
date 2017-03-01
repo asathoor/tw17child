@@ -1,9 +1,13 @@
 <?php 
 /**
+ * @package: WordPress
+ * @sub-package: Twenty Seventeen
+ * @sub-package: tw17child
+ * @url: https://github.com/asathoor/tw17child
+ *
  * Template: page-pers-galleri.php
- * Purpose: costum page sample.
+ * Purpose: Twenty Seventeen costum child theme page
  */
-
 get_header(); ?>
 
 <div class="wrap">
