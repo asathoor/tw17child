@@ -42,28 +42,6 @@
 	</div><!-- .site-content-contain -->
 </div><!-- #page -->
 
-
-<!-- script>
-
-/**
- * Here we add the content via Jquery, not PHP.
- * @url: https://developer.wordpress.org/themes/advanced-topics/javascript-best-practices/
- * Note: that's the way to add Jquery functions in a theme.
- */
-/*
-( function( $ ) {
-
-	// your code from here ...
-	
-	console.log('Jquery: all systems up and running. Alert level: green.');
-
-	// code end
-
-} )( jQuery ); // jquery end
-
-*/
-</script -->
-
 <?php wp_footer(); ?>
 
 </body>

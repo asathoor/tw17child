@@ -1,4 +1,10 @@
-<?php get_header(); ?>
+<?php 
+/**
+ * Template: page-pers-galleri.php
+ * Purpose: costum page sample.
+ */
+
+get_header(); ?>
 
 <div class="wrap">
 	<div id="primary" class="content-area">
@@ -30,13 +36,15 @@
  * Note: that's the way to add Jquery functions in a theme.
  */
 ( function( $ ) {
-	
-	console.log('Jquery: all systems are up and running. Alert level: green.');
-	$('h1').text('Jeg har min hest, jeg har min lasso');
+
+	// hello world variant
+	$('h1').text('I\'m a poor lonesome cowboy');
 
 	// try: animate.css
 	// @url: https://github.com/daneden/animate.css
-	$('h1').addClass('animated swing');
+	$('h1').hover( function(){
+		$(this).addClass('animated swing');
+	} );
 
 } )( jQuery ); // jquery end
 
