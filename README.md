@@ -16,3 +16,4 @@ The changes are:
 | category-twenty-seventeen.php  | REST API via AJAX |
 | functions.php                  | Tweaks: SEO, Tiny MCE, remove `head` crap |
 | page-jquery-test.php           | How to add Jquery code to a page |
+| page-pers-galleri.php		 | Costum page with Jquery selector |
