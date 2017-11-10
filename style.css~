@@ -17,6 +17,7 @@
 
 a {
 	color: #707070;
+	font-weight: bold;
 }
 
 /* Full width template styles (page-full-width.php) */
