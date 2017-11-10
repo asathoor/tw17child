@@ -1,32 +1,34 @@
 /*
- Theme Name:   Twenty Seventeen Child
- Theme URI:    http://example.com/twenty-fifteen-child/
- Description:  Twenty Seventeen Child Theme
- Author:       Per Thykjær Jensen
+ Theme Name:   Tyve Sytten Barn
+ Description:  Det ka vi da godt proev jaja.
+ Author:       Per Thykjaer Jensen
  Author URI:   http://multimusen.dk
  Template:     twentyseventeen
- Version:      1.0.0
- License:      GNU General Public License v2 or later
- License URI:  http://www.gnu.org/licenses/gpl-2.0.html
- Tags:         one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
- Text Domain:  tw17child
+ Version:      1.0
+ License:      GPLv3
+ License URI:  http://www.gnu.org/licenses/gpl-3.0.html
+ Tags:         themify, minimalism
+ Text Domain:  tw17barn
 */
 
-/**
- * Glyphicons
- */
-@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css");
+/* === Child Theme Styles === */
 
-/**
- * Plugin Dannebrog: flag size
- * @package: Dannebrog
- * @url: https://github.com/asathoor/Dannebrog
- */
-#Dannebrog {
-	max-width: 55px;
-	height: auto;
-}
+/* Full width template styles (page-full-width.php) */
+body:not(.has-sidebar):not(.page-one-column) .page-header,
+body.has-sidebar.error404 #primary .page-header,
+body.page-two-column:not(.archive) #primary .entry-header-full-width,
+body.page-two-column.archive:not(.has-sidebar) #primary .page-header {
+display: block;
+width: 100%;
+} 
 
-.red {
-	color: red;
-}
+.blog:not(.has-sidebar) #primary article,
+.archive:not(.page-one-column):not(.has-sidebar) #primary article,
+.search:not(.has-sidebar) #primary article,
+.error404:not(.has-sidebar) #primary .page-content,
+.error404.has-sidebar #primary .page-content,
+body.page-two-column:not(.archive) #primary .entry-content-full-width,
+body.page-two-column #comments {
+display: block;
+width: 100%;
+} 
