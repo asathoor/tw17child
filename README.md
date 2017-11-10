@@ -23,7 +23,7 @@ The changes are:
 | functions.php                  | Tweaks: SEO, Tiny MCE, remove `head` crap |
 | page-jquery-test.php           | How to add Jquery code to a page |
 | page-pers-galleri.php		 | Costum page with Jquery selector |
-
+| page-full-width.php | inspired by [this post](https://biegal.ski/code/wordpress-twenty-seventeen-theme-full-width-page) |
 
 # External Sources
 
