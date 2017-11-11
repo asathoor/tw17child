@@ -28,16 +28,17 @@
 								'menu_class'     => 'social-links-menu',
 								'depth'          => 1,
 								'link_before'    => '<span class="screen-reader-text">',
-								'link_after'     => '</span>' . twentyseventeen_get_svg( array( 'icon' => 'chain' ) ),
+								'link_after'     => '</span>' 
+                                    . twentyseventeen_get_svg( 
+                                        array( 'icon' => 'chain' ) ),
 							) );
 						?>
 					</nav><!-- .social-navigation -->
 				<?php endif;
 
-				// get_template_part( 'template-parts/footer/site', 'info' );
+				get_template_part( 'template-parts/footer/site', 'info' );
+                // get the file ../template-parts/footer/site-info.php
 				?>
-                
-                &copy; Powered by WordPress. The theme is based on Twentyseventeen.<br> Child theme <a href="https://github.com/asathoor/tw17child">Tw17Child</a> by     Per Thykjaer Jensen, <?php echo date('Y'); ?>.
                 
 			</div><!-- .wrap -->
 		</footer><!-- #colophon -->

@@ -1,25 +1,27 @@
 /*
- Theme Name:   Tyve Sytten Barn
- Description:  Det ka vi da godt proev jaja.
+ Theme Name:   DigiDay Nov17
+ Description:  A Twenty Seveteen tweak with a full width page template
  Author:       Per Thykjaer Jensen
  Author URI:   http://multimusen.dk
  Template:     twentyseventeen
- Version:      1.0
+ Version:      1.5
  License:      GPLv3
  License URI:  http://www.gnu.org/licenses/gpl-3.0.html
  Tags:         themify, minimalism
- Text Domain:  tw17barn
+ Text Domain:  tw17barn_digiday
 */
 
-/* === Child Theme Styles === */
-
-/* Links */
-
-a {
-	color: #707070;
+/* make the links more visible */
+/*
+div.site-info a, 
+.entry-content ul li a {
+    color: chartreuse !important; // necessary, else overruled
 }
+*/
 
-/* Full width template styles (page-full-width.php) */
+/* Full width template styles (page-full-width.php) 
+ * inspired by: https://biegal.ski/code/wordpress-twenty-seventeen-theme-full-width-page
+*/
 body:not(.has-sidebar):not(.page-one-column) .page-header,
 body.has-sidebar.error404 #primary .page-header,
 body.page-two-column:not(.archive) #primary .entry-header-full-width,

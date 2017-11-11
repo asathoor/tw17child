@@ -2,16 +2,14 @@
 /**
  * Template Name: Full Width
  * Based on: page.php
+ * file: page-full-width.php
  **/
  get_header(); ?>
 
-<!-- from: page-full-width.php -->
 <div class="wrap">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-			<!-- from page.php -->
-            
             <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                 <header class="entry-header-full-width">
                     <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
@@ -29,7 +27,6 @@
             </article><!-- #post-## -->
             
             <!-- end -->
-
 		</main><!-- #main -->
 	</div><!-- #primary -->
 </div><!-- .wrap -->
