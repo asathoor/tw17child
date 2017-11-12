@@ -38,6 +38,7 @@
 
 				get_template_part( 'template-parts/footer/site', 'info' );
                 // get the file ../template-parts/footer/site-info.php
+                // Problem and solution: "Proudly powered by ..."
 				?>
                 
 			</div><!-- .wrap -->
