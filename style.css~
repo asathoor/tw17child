@@ -16,8 +16,7 @@
 /* Links */
 
 a {
-	color: #707070;
-	font-weight: bold;
+	color: #444991;
 }
 
 /* Full width template styles (page-full-width.php) */

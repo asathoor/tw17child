@@ -37,7 +37,11 @@
 				// get_template_part( 'template-parts/footer/site', 'info' );
 				?>
                 
-                &copy; Powered by WordPress. The theme is based on Twentyseventeen.<br> Child theme <a href="https://github.com/asathoor/tw17child">Tw17Child</a> by     Per Thykjaer Jensen, <?php echo date('Y'); ?>.
+                <!-- copyright info -->
+                &copy; Powered by WordPress.
+                A theme based on Twentyseventeen. 
+                The child theme <a href="https://github.com/asathoor/tw17child">Tw17Child</a> 
+                by Per Thykjaer Jensen <?php echo date('Y'); ?>.
                 
 			</div><!-- .wrap -->
 		</footer><!-- #colophon -->
