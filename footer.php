@@ -40,15 +40,6 @@
                 // get the file ../template-parts/footer/site-info.php
 				?>
                 
-<<<<<<< HEAD
-                <!-- copyright info -->
-                &copy; Powered by WordPress.
-                A theme based on Twentyseventeen. 
-                The child theme <a href="https://github.com/asathoor/tw17child">Tw17Child</a> 
-                by Per Thykjaer Jensen <?php echo date('Y'); ?>.
-                
-=======
->>>>>>> master
 			</div><!-- .wrap -->
 		</footer><!-- #colophon -->
 	</div><!-- .site-content-contain -->

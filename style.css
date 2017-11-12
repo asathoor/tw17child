@@ -11,7 +11,6 @@
  Text Domain:  tw17barn_digiday
 */
 
-<<<<<<< HEAD
 /* === Child Theme Styles === */
 
 /* Links */
@@ -19,15 +18,15 @@
 a {
 	color: #444991;
 	font-weight: bolder;
-=======
+
 /* make the links more visible */
-/*
+
+
 div.site-info a, 
 .entry-content ul li a {
     color: chartreuse !important; // necessary, else overruled
->>>>>>> master
 }
-*/
+
 
 /* Full width template styles (page-full-width.php) 
  * inspired by: https://biegal.ski/code/wordpress-twenty-seventeen-theme-full-width-page
