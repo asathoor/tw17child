@@ -30,6 +30,17 @@ get_header(); ?>
 	<?php endif; ?>
 
 	<div id="primary" class="content-area">
+
+		<!-- REST API ADD CONTENT FORM
+		tutorial (26.42 https://www.youtube.com/watch?v=rGObWtjxGBc ) -->
+		<div class="admin-quick-add">
+			<h3>Quick Add Post</h3>
+			<input id="newPostTitle" type="text" name="title" placeholder="Title">
+			<textarea id="nowPostContent" name="content" rows="8" cols="80" placeholder="Add content here ..."></textarea>
+			<button id="quick-add-button" type="button" name="button">Add post</button>
+		</div>
+		<!-- end rest -->
+
 		<main id="main" class="site-main" role="main">
 
 			<?php
