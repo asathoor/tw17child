@@ -1,3 +1,9 @@
+/**
+ * file: js.js
+ * purpose: Send Post content via REST API
+ * based on: https://www.youtube.com/watch?v=rGObWtjxGBc
+ **/
+
 //console.log("Cheers! From ../js/js.js in tw17child"); // test
 
 /* Add Post via AJAX */
@@ -6,7 +12,7 @@ let quickAddButton = document.querySelector('#quick-add-button');
 if (quickAddButton){
   quickAddButton.addEventListener('click', function(){
 
-    // send these data
+    // data object with the content from the form fields
     let ourPostData = {
       "title" : document.querySelector(".admin-quick-add [name='title']").value,
       "content" : document.querySelector(".admin-quick-add [name='content']").value,
@@ -20,6 +26,7 @@ if (quickAddButton){
     createPost.setRequestHeader("Content-Type","application/json;charset=UTF-8");
     createPost.send(JSON.stringify(ourPostData));
 
+    // prepare a fresh form after submit
     createPost.onreadystatechange = function(){
       if (createPost.readyState == 4) {
         if (createPost.status == 201) {
